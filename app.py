@@ -4,6 +4,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import dash
 from dash import dcc, html, Input, Output
+import gunicorn
 
 # access token for the map
 token= "pk.eyJ1IjoiZmF5ZXotaCIsImEiOiJja3kxc3N1azkwZXJnMnBsZzhkY3owY3NvIn0.bZf3aU9wAEx1mx4Vzbd0Xg"

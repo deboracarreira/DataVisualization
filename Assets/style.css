@@ -1,1 +1,131 @@
+/* the style of the body */
+body{
+    background-color: #fdc8cb;
+    color: #000;
+    font-family: sans-serif;
+    margin:0px;
+    overflow-x:auto;
+    min-height:1200px;
+    min-width: 1600px;
+}
+
+/* remove the margins of html p element */
+p{
+    margin:0px;
+}
+
+/* the style of the main section of the layout */
+#main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-gap: 25px;
+    height: 200vh;
+    max-height: 2500px;
+    min-height: 1500px;
+}
+
+/* the style of the header */
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: 1/1/3/2;
+    background-color: #a90000;
+    color: white;
+    overflow: hidden;
+    border-bottom: 3px solid black;
+}
+
+/* style of the p elements in the header section */
+#header p{
+    margin: 10px;
+}
+
+.headertext{
+    font-size: 20px;
+}
+
+#title{
+    font-size: 35px;
+}
+/* position of the graphs section of the layout */
+#graphs{
+    grid-area: 3/1/20/2;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 20px;
+}
+
+/* position of the filters section of the the layout */
+#filters{
+    grid-area: 1/2/2/3;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#dropdown-container{
+    margin-bottom: 15px;
+}
+
+/* positions of the graphs in the layout */
+#graph1{
+    grid-area: 1/1/6/2;
+}
+
+
+#graph2{
+    grid-area: 2/2/6/3;
+}
+
+
+#graph3-4{
+    grid-area: 6/1/11/2;
+}
+
+
+#graph3{
+    height: 50%;
+}
+
+#graph4{
+    height: 50%;
+}
+
+#graph5{
+    grid-area: 6/2/11/3;
+}
+
+
+/* the style of all the graph boxes in the layout */
+.graphbox{
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: -1px -1px 4px #5d5d5d, 1px 1px 4px #5d5d5d;
+}
+
+
+/* style of the footer */
+#footer{
+    grid-area: 20/1/21/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #a90000;
+    color: white;
+    font-size: 20px;
+    border-top: 3px solid black;
+}
+
+/* set the height of all dash graphs to fit 100% of the parent div height */
+.dash-graph{
+    height: 100%;
+}
+
 

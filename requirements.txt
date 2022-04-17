@@ -7,3 +7,4 @@ dash-html-components
 dash-core-components
 numpy
 gunicorn
+zipfile
